@@ -1,3 +1,16 @@
+Asignacion de tipo de datos 
+
+Mandatos: 
+1.Saludo con su nombre
+2.Crea un diagrama de flujo que pida dos números, lo sume y muestre resultado
+3.Diseña un diagrama que reciba un número y determine si es par o impar
+4.Realiza un diagrama que solicite dos números y muestre cuál es el mayor o si son iguales
+5.Crea un diagrama que pida un número y muestra su tabla de multiplicar del 1 al 10
+6.Diseña un diagrama que solicite el radio de un círculo y calcule su área con la fórmula a es igual a 3.14 radio dos al cuadrado
+7.Realiza un diagrama que solicita tres números, calcula su promedio y lo muestra.
+8.Diseña un diagrama que convierta una temperatura ingresada en grados celsius a Fahrenheit usando la fórmula f = (c* 9 / 5) + 32
+
+
 1.
 Algoritmo Nombre_Usuario
 	Escribir "Ingrese su nombre:"
