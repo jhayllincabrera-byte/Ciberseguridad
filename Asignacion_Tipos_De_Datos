@@ -1,1 +1,89 @@
+1.
+Algoritmo Nombre_Usuario
+	Escribir "Ingrese su nombre:"
+	Leer Nombre
+	Imprimir "Hola," ,Nombre
+FinAlgoritmo
+
+2. 
+Algoritmo Suma_Dos
+Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+    suma ← num1 + num2
+    Escribir "La suma es:", suma
+
+3. 
+Algoritmo Numero_Par
+Escribir "Ingrese un número:"
+    Leer num
+    si (num mod 2 = 0) entonces
+        Escribir "El número es par"
+    sino
+        Escribir "El número es impar"
+    fin si
+
+4.
+Algoritmo Numero_Mayor
+Escribir "Introduce el primer número:"
+	Leer numero1
+	Escribir "Introduce el segundo número:"
+	Leer numero2
+	Si numero1 == numero2 Entonces
+		Escribir "Los números son iguales"
+		Sino
+			Si numero1 > numero2 Entonces
+				Escribir "El número mayor es: ", numero1
+				Sino
+	Escribir "El número mayor es: ", numero2
+	FinSi
+
+5.
+Algoritmo Tabla_Multiplicar
+	Definir num, i, resultado Como Entero
+	Escribir 'Introduce un número para generar su tabla de multiplicar:'
+	Leer num
+	Para i<-1 Hasta 10 Hacer
+		resultado <- num*i
+		Escribir num, ' x ', i, ' = ', resultado
+	FinPara
+FinAlgoritmo
+
+6. 
+Algoritmo Circunferencia_
+Definir radio,superficie, perimetro Como Real
+	Escribir " introduce el radio de la circunferencia";
+	leer radio
+	superficie = PI * radio ^2
+	perimetro= 2 * PI * radio
+	Escribir "la superficie es" superficie
+	Escribir "el perimetro es", perimetro
+FinalAlgoritmo
+
+7.
+Algoritmo Promedio_
+	Definir num1, num2, num3, promedio Como Real
+	Escribir "Introduce el primer número:"
+	Leer num1
+	Escribir "Introduce el segundo número:"
+	Leer num2
+	Escribir "Introduce el tercer número:"
+	Leer num3
+	promedio <- (num1 + num2 + num3) / 3
+	Escribir "El promedio de los tres números es: ", promedio
+FinProceso
+
+8.
+
+Algoritmo Grados_
+	Definir celsius, fahrenheit Como Real
+	Escribir 'Introduce la temperatura en grados Celsius:'
+	Leer celsius
+	fahrenheit <- (celsius*9/5)+32
+	Escribir 'La temperatura en grados Fahrenheit es: ', fahrenheit
+FinAlgoritmo
+
+
+
 
