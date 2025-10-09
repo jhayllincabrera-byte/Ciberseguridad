@@ -1,1 +1,220 @@
+1.
+Algoritmo Edad_
+	Definir edad Como Entero
+	Escribir 'Por favor, introduce tu edad:'
+	Leer edad
+	Si edad>=18 Entonces
+		Escribir 'Eres mayor de edad'
+	SiNo
+		Escribir 'Eres menor de edad'
+	FinSi
+FinAlgoritmo
+
+2.
+Algoritmo Determina_
+    Definir numero Como Real
+    Escribir "Introduce un número:"
+    Leer numero
+    Si numero > 0 Entonces
+        Escribir "El número es Positivo"
+    Sino
+        Si numero < 0 Entonces
+            Escribir "El número es Negativo"
+        Sino
+            Escribir "El número es Cero"
+        FinSi
+    FinSi
+FinProceso
+
+
+3.
+Algoritmo Impar_Par
+	Escribir "Ingrese un número:"
+    Leer num
+    si (num mod 2 = 0) entonces
+        Escribir "El número es par"
+    sino
+        Escribir "El número es impar"
+    fin si
+FinAlgoritmo
+
+4.
+Algoritmo Calificacion_
+    Definir nota Como Entero;
+    Escribir "Introduce la nota (entre 0 y 100):";
+    Leer nota;
+    Si nota >= 90 Entonces
+        Escribir "Aprobado con A";
+    Sino
+        Si nota >= 70 Entonces
+            Escribir "Aprobado";
+        Sino
+            Escribir "Reprobado";
+        FinSi
+    FinSi
+FinProceso
+
+5.
+Algoritmo Monto_Compra
+	Definir monto, descuento, totalPagar Como Real
+	Escribir 'Ingrese el monto de la compra:'
+	Leer monto
+	Si monto>500 Entonces
+		descuento <- monto*0.10
+		totalPagar <- monto-descuento
+		Escribir 'Se aplicó un descuento de: ', descuento
+	SiNo
+		totalPagar <- monto
+	FinSi
+	Escribir 'El total a pagar es: ', totalPagar
+FinAlgoritmo 
+
+
+"Ejercicios con Bucle Mientras"
+
+6.Algoritmo Numero_
+	Definir contador Como Entero
+	contador <- 1
+	Mientras contador<=10 Hacer
+		Escribir contador
+		contador <- contador+1
+	FinMientras
+FinAlgoritmo
+
+
+
+7.
+Algoritmo Pide_numeros
+    Definir suma, numero Como Real;
+    suma = 0;
+    Repetir
+        Escribir "Introduce un número (escribe 0 para terminar):";
+        Leer numero;
+		
+        suma = suma + numero;
+    Hasta Que numero == 0;
+    Escribir "La suma total de los números es: ", suma;
+FinProceso
+
+8.
+Algoritmo Adivina_Numero
+    Definir numero_secreto, numero_ingresado Como Entero;
+    numero_secreto = 7;
+    Escribir "He pensado en un número. ¡Intenta adivinarlo!";
+	
+    Repetir
+        Escribir "Introduce tu número:";
+        Leer numero_ingresado;
+        Si numero_ingresado <> numero_secreto Entonces
+            Escribir "Incorrecto. ¡Sigue intentando!";
+        FinSi
+    Hasta Que numero_ingresado == numero_secreto;
+    Escribir "¡Felicidades! Adivinaste el número secreto.";
+FinProceso
+
+9.
+
+Algoritmo Contrasena_
+	Definir contrasena_ingresada Como Cadena
+	Repetir
+		Escribir 'Por favor, introduce la contraseña:'
+		Leer contrasena_ingresada
+		Si contrasena_ingresada<>'1234' Entonces
+			Escribir 'Contraseña incorrecta. Intenta de nuevo.'
+		FinSi
+	Hasta Que contrasena_ingresada=='1234'
+	Escribir '¡Contraseña correcta! Acceso concedido. ?'
+FinAlgoritmo
+
+10. 
+
+Algoritmo Contador_Regresivo
+	Definir numero Como Entero
+	Escribir 'Introduce un número para iniciar la cuenta regresiva:'
+	Leer numero
+	Mientras numero>=1 Hacer
+		Escribir numero
+		numero <- numero-1
+	FinMientras
+FinAlgoritmo
+
+"Ejercicios con Bucles Repetitivos"
+
+11.
+
+Algoritmo Tabla_Multiplicar
+    Definir numero, contador, resultado Como Entero;
+    Escribir "Introduce un número para generar su tabla de multiplicar:";
+    Leer numero;
+    Para contador = 1 Hasta 12 Hacer
+        resultado = numero * contador;
+		
+        Escribir numero, " x ", contador, " = ", resultado;
+    FinPara
+FinProceso
+
+12.
+
+Algoritmo Suma_10
+    Definir numero, suma Como Real;
+    Definir contador Como Entero;
+    suma = 0;
+    Para contador = 1 Hasta 10 Hacer
+        Escribir "Introduce el número ", contador, "/10:";
+        Leer numero;
+		
+        suma = suma + numero;
+    FinPara
+    Escribir "La suma total de los 10 números es: ", suma;
+FinProceso
+
+13.
+
+Algoritmo Factorial_
+	Definir num Como Real
+	Definir factorial Como real
+	Escribir 'Introduce un número entero no negativo:'
+	Leer num
+	factorial <- 1
+	Mientras num >0 Hacer
+		factorial <- factorial * num
+		num <- num-1
+	FinMientras
+	Escribir 'El factorial es: ', factorial
+FinAlgoritmo
+
+14.
+
+Algoritmo Muestra_
+	Definir numero Como Entero
+	numero <- 2
+	Mientras numero<=50 Hacer
+		Escribir numero
+		numero <- numero+2
+	FinMientras
+FinAlgoritmo
+
+
+15.
+
+Algoritmo _notas
+    Definir nota, suma, promedio Como Real;
+    Definir contador Como Entero;
+    suma = 0;
+	
+    Para contador = 1 Hasta 5 Hacer
+        Escribir "Introduce la nota ", contador, ":";
+        Leer nota;
+        
+        suma = suma + nota;
+    FinPara
+	
+    promedio = suma / 5;
+	
+    Escribir "La suma de las notas es: ", suma;
+    Escribir "El promedio final es: ", promedio;
+FinProceso
+
+16.
+
 
