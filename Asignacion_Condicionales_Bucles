@@ -1,3 +1,27 @@
+Asignacion Condicionales y Bucles
+
+Mandatos:
+1.Pide la edad al usuario. Si es mayor o igual a 18 muestra 'Eres mayor de edad', sino 'Eres menor de edad'.
+2.Solicita un número y determina si es positivo, negativo o cero.
+3.	Pide un número e indica si es par o impar.
+4.	Introduce una nota (0-100). Muestra 'Aprobado con A' si es >=90, 'Aprobado' si es >=70 y 'Reprobado' en caso contrario.
+5.	Ingresa el monto de una compra. Si es mayor a 500 aplica un 10% de descuento, sino paga precio normal.
+
+Ejercicios Bucle Mientras
+6.	Muestra los números del 1 al 10 usando mientras.
+7.Pide números al usuario y suma todos hasta que escriba 0.
+8.Adivina el número secreto (ejemplo: 7).
+9.Valida una contraseña. Mientras no sea '1234', vuelve a pedirla.
+10.Crea un contador regresivo desde un número dado hasta 1.
+
+Ejercicios Bucles Repetitivos
+11.Muestra la tabla de multiplicar de un número ingresado por el usuario.
+12.Pide 10 números y calcula la suma total.
+13. Calcula el  factorial de un número.
+14.Muestra todos los números pares entre 1 y 50.
+15.Pide 5 notas, calcula la suma y el promedio final.
+
+
 1.
 Algoritmo Edad_
 	Definir edad Como Entero
