@@ -1,1 +1,184 @@
+Ejercicios de Funciones y Vectores 
+
+Ejercicios de Funciones
+1. Suma de dos números:
+Crea una función llamada 'Sumar' que reciba dos números enteros y devuelva su suma. Muestra el resultado en el algoritmo principal.
+
+Algoritmo Suma_2
+	Escribir " ingrese digito 1 "
+	Leer dig1 
+	Escribir "ingrese digito 2"
+	Leer dig2
+	suma= dig1 + dig2
+	
+	Escribir "la suma es " , suma
+	
+FinAlgoritmo
+
+2.	Número par o impar:
+Crea una función 'EsPar' que reciba un número entero y devuelva 'Verdadero' si es par o 'Falso' si es impar.
+
+Algoritmo Par_impar
+		Definir num Como Entero;
+		Definir resultado Como Logico;
+
+		Escribir "Introduce un número entero para saber si es par:";
+		Leer num;
+		resultado <- EsPar(num);
+		
+		Si resultado == Verdadero Entonces
+			Escribir "El número ", num, " es Par.";
+		Sino
+			Escribir "El número ", num, " es Impar.";
+		FinSi
+FinAlgoritmo
+
+Funcion valor_logico <- EsPar(numero)
+  
+    Si numero MOD 2 == 0 Entonces
+        valor_logico <- Verdadero;
+    Sino
+        valor_logico <- Falso;
+    FinSi
+FinFuncion
+
+3.Calcular el promedio:
+Diseña una función 'Promedio' que reciba tres notas y devuelva el promedio. El algoritmo principal debe mostrar si el estudiante aprobó (≥70) o reprobó (<70).
+
+Algoritmo Promedio_estudiantil
+    Definir nota1, nota2, nota3, promedio_final Como Real;
+    
+    Escribir "--- Calculadora de Promedio Estudiantil ---";
+    Escribir "Introduce la primera nota:";
+    Leer nota1;
+    Escribir "Introduce la segunda nota:";
+    Leer nota2;
+    Escribir "Introduce la tercera nota:";
+    Leer nota3;
+    
+    promedio_final <- Promedio(nota1, nota2, nota3);
+    
+    Escribir ""; 
+    Escribir "El promedio final del estudiante es: ", promedio_final;
+    
+    Si promedio_final >= 70 Entonces
+        Escribir "Estado: Aprobado";
+    Sino
+        Escribir "Estado: Reprobado";
+    FinSi
+FinAlgoritmo
+
+Funcion resultado <- Promedio(n1, n2, n3)
+    
+    resultado <- (n1 + n2 + n3) / 3;
+FinFuncion
+
+4.	Contraseña segura:
+Crea una función 'ValidarPassword' que reciba una cadena y devuelva 'Verdadero' si la contraseña tiene más de 8 caracteres. 
+El algoritmo principal debe mostrar si la contraseña es válida o no.
+
+
+Algoritmo contrasena_nueva
+    Definir password Como Caracter;
+    Definir es_valida Como Logico;
+    Escribir "--- Validador de Contraseñas ---";
+    Escribir "Crea una contraseña (debe tener más de 8 caracteres):";
+    Leer password;
+    
+    es_valida <- ValidarPassword(password);
+    
+    Si es_valida Entonces
+        Escribir "? ¡Contraseña válida y segura!";
+    Sino
+        Escribir "? Contraseña no válida. Debe tener más de 8 caracteres.";
+    FinSi
+FinAlgoritmo
+
+
+Funcion resultado <- ValidarPassword(cadena)
+    
+    Si Longitud(cadena) > 8 Entonces
+        
+        resultado <- Verdadero;
+    Sino
+       
+        resultado <- Falso;
+    FinSi
+FinFuncion
+
+5. Algoritmo Verdadero_falso
+	
+    Definir num1, num2, num3, el_mayor Como Real;
+
+    Escribir "--- Encontrar el Número Mayor ---";
+    Escribir "Introduce el primer número:";
+    Leer num1;
+    Escribir "Introduce el segundo número:";
+    Leer num2;
+    Escribir "Introduce el tercer número:";
+    Leer num3;
+    
+    el_mayor <- MayorNumero(num1, num2, num3);
+
+    Escribir ""; 
+    Escribir "El número mayor de los tres es: ", el_mayor;
+FinAlgoritmo
+
+Funcion resultado <- MayorNumero(a, b, c)
+    Si a > b Y a > c Entonces
+        resultado <- a;
+    Sino
+	
+        Si b > c Entonces
+            resultado <- b;
+        Sino
+            resultado <- c;
+        FinSi
+    FinSi
+FinFuncion
+
+
+6.Ejercicios de Vectores
+
+7.28.	Cargar y mostrar elementos:
+Declara un vector de 5 posiciones. Pide al usuario que ingrese 5 números y luego muestra todos los valores almacenados.
+
+Algoritmo Posiciones_Numeros
+	Dimensionar numeros(5)
+	Definir contador Como Entero
+	Escribir 'Por favor, ingresa 5 números:'
+	Para contador<-1 Hasta 5 Hacer
+		Escribir 'Ingresa el valor para la posición ', contador, ':'
+		Leer numeros[contador]
+	FinPara
+	Escribir ''
+	Escribir 'Los valores que guardaste en el vector son:'
+	Para contador<-1 Hasta 5 Hacer
+		Escribir 'El valor en la posición ', contador, ' es: ', numeros[contador]
+	FinPara
+FinAlgoritmo
+
+8.29.	Suma de elementos del vector:
+Crea un vector de 10 números y calcula la suma total de sus elementos.
+
+Algoritmo Sumar_Vector
+    Dimension numeros[10];
+    Definir contador, suma Como Entero;
+    Escribir "Ingresa 10 números para llenar el vector:";
+    Para contador <- 1 Hasta 10 Hacer
+        Escribir "Número para la posición ", contador, ":";
+        Leer numeros[contador];
+    FinPara
+    suma <- 0;
+    Para contador <- 1 Hasta 10 Hacer
+        suma <- suma + numeros[contador];
+    FinPara
+    Escribir "";
+    Escribir "La suma total de los elementos del vector es: ", suma;
+FinProceso
+
+9. 
+
+
+
 
