@@ -106,10 +106,12 @@ Funcion resultado <- ValidarPassword(cadena)
     FinSi
 FinFuncion
 
-5. Algoritmo Verdadero_falso
-	
-    Definir num1, num2, num3, el_mayor Como Real;
+5. Mayor de tres números:
+Crea una función 'MayorNumero' que reciba tres números y devuelva el mayor de ellos. Usa condicionales dentro de la función.
 
+Algoritmo Mayor_tres
+    Definir num1, num2, num3, el_mayor Como Real;
+    
     Escribir "--- Encontrar el Número Mayor ---";
     Escribir "Introduce el primer número:";
     Leer num1;
@@ -119,16 +121,16 @@ FinFuncion
     Leer num3;
     
     el_mayor <- MayorNumero(num1, num2, num3);
-
+    
     Escribir ""; 
     Escribir "El número mayor de los tres es: ", el_mayor;
 FinAlgoritmo
 
 Funcion resultado <- MayorNumero(a, b, c)
+   
     Si a > b Y a > c Entonces
         resultado <- a;
     Sino
-	
         Si b > c Entonces
             resultado <- b;
         Sino
@@ -137,10 +139,7 @@ Funcion resultado <- MayorNumero(a, b, c)
     FinSi
 FinFuncion
 
-
-6.Ejercicios de Vectores
-
-7.28.	Cargar y mostrar elementos:
+6. Cargar y mostrar elementos:
 Declara un vector de 5 posiciones. Pide al usuario que ingrese 5 números y luego muestra todos los valores almacenados.
 
 Algoritmo Posiciones_Numeros
@@ -158,7 +157,7 @@ Algoritmo Posiciones_Numeros
 	FinPara
 FinAlgoritmo
 
-8.29.	Suma de elementos del vector:
+7.Suma de elementos del vector:
 Crea un vector de 10 números y calcula la suma total de sus elementos.
 
 Algoritmo Sumar_Vector
@@ -177,7 +176,97 @@ Algoritmo Sumar_Vector
     Escribir "La suma total de los elementos del vector es: ", suma;
 FinProceso
 
-9. 
+8.Buscar número en el vector:
+Pide al usuario llenar un vector con 8 números y luego solicita un número a buscar. Muestra si el número se encuentra o no en el vector.
+
+Algoritmo Buscar_Vector
+    Dimension numeros[8];
+    Definir i, num_buscar Como Entero;
+    Definir encontrado Como Logico;
+	
+    Escribir "--- Llenado del Vector ---";
+    Para i <- 1 Hasta 8 Hacer
+        Escribir "Ingresa el número para la posición ", i, ":";
+        Leer numeros[i];
+    FinPara
+	
+    Escribir ""; 
+    Escribir "--- Búsqueda de Número ---";
+    Escribir "Ingresa el número que deseas buscar en el vector:";
+    Leer num_buscar;
+	
+    encontrado <- Falso;
+    i <- 1;
+    
+    Mientras i <= 8 Y encontrado == Falso Hacer
+        Si numeros[i] == num_buscar Entonces
+            encontrado <- Verdadero;
+        FinSi
+        i <- i + 1;
+    FinMientras
+	
+    Escribir "";
+    Si encontrado == Verdadero Entonces
+        Escribir "? ¡Éxito! El número ", num_buscar, " SÍ se encuentra en el vector.";
+    Sino
+        Escribir "? Lo sentimos. El número ", num_buscar, " NO se encuentra en el vector.";
+    FinSi
+FinProceso
+
+9. Promedio de calificaciones:
+Almacena las calificaciones de 5 estudiantes en un vector y calcula el promedio general del grupo.
+
+
+Algoritmo Calificaciones_estudiantes
+    Dimension calificaciones[5];
+    Definir i Como Entero;
+    Definir suma, promedio Como Real;
+    
+    Escribir "--- Ingreso de Calificaciones ---";
+    Para i <- 1 Hasta 5 Hacer
+        Escribir "Ingresa la calificación del estudiante ", i, ":";
+        Leer calificaciones[i];
+    FinPara
+    
+    suma <- 0;
+    
+    Para i <- 1 Hasta 5 Hacer
+        suma <- suma + calificaciones[i];
+    FinPara
+    
+    promedio <- suma / 5;
+    
+    Escribir "";
+    Escribir "--- Resultados del Grupo ---";
+    Escribir "La suma total de las calificaciones es: ", suma;
+    Escribir "El promedio general del grupo es: ", promedio;
+FinProceso
+
+10.Contar números pares:
+Crea un vector con 10 números y usa un contador para determinar cuántos son pares. Muestra el total de números pares encontrados.
+
+Algoritmo Contar_Par
+    Dimension numeros[10];
+    Definir i, contador_pares Como Entero;
+    
+    Escribir "--- Ingreso de 10 Números ---";
+    Para i <- 1 Hasta 10 Hacer
+        Escribir "Ingresa el número para la posición ", i, ":";
+        Leer numeros[i];
+    FinPara
+    
+    contador_pares <- 0;
+    
+    Para i <- 1 Hasta 10 Hacer
+        Si numeros[i] MOD 2 == 0 Entonces
+            contador_pares <- contador_pares + 1;
+        FinSi
+    FinPara
+    
+    Escribir ""; 
+    Escribir "--- Análisis Completado ---";
+    Escribir "? El total de números pares encontrados es: ", contador_pares;
+FinProceso
 
 
 
