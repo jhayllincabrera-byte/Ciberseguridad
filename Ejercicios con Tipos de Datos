@@ -1,0 +1,127 @@
+Ejercicios con Tipos de Datos
+
+1.Pide al usuario un número entero y muestra su doble.
+Algoritmo Suma_Entero
+    Definir numero, doble Como Entero;
+    Escribir "Introduce un número entero para calcular su doble:";
+    Leer numero;
+    doble <- numero * 2;
+    Escribir "El doble de ", numero, " es: ", doble;
+FinProceso
+
+2. Solicita dos números enteros y muestra la suma.
+
+Algoritmo Muestra_Suma
+    Definir num1, num2, suma Como Entero;
+    Escribir "Introduce el primer número entero:";
+    Leer num1;
+    Escribir "Introduce el segundo número entero:";
+    Leer num2;
+    suma <- num1 + num2;
+    Escribir "La suma de ", num1, " + ", num2, " es: ", suma;
+FinProceso
+
+3.Ingresa un número real (decimal) y muestra su mitad.
+
+Algoritmo Calcular_Mitad
+		Definir numero, mitad Como Real;
+		Escribir "Introduce un número real (puede tener decimales):";
+		Leer numero;
+		
+		mitad <- numero / 2;
+	
+		Escribir "La mitad de ", numero, " es: ", mitad;
+FinProceso
+
+4. Solicita dos números reales y muestra su promedio.
+
+Algoritmo Calcular_PromedioDeDos
+    Definir num1, num2, promedio Como Real;
+    Escribir "Introduce el primer número real (puede tener decimales):";
+    Leer num1;
+    Escribir "Introduce el segundo número real:";
+    Leer num2;
+
+    promedio <- (num1 + num2) / 2;
+    
+    Escribir "El promedio de ", num1, " y ", num2, " es: ", promedio;
+FinProceso
+
+5. Pide al usuario que escriba su edad y muestra Verdadero si es mayor de edad (18+), Falso en caso contrario.
+
+Algoritmo EsMayor_DeEdad
+		Definir edad Como Entero;
+		Definir es_mayor Como Logico; 
+		Escribir "Introduce tu edad:";
+		Leer edad;
+		
+		es_mayor <- edad >= 18;
+		
+		Escribir "Es mayor de edad: ", es_mayor;
+FinProceso
+
+6. Pregunta al usuario si tiene internet en casa (1 = Sí, 0 = No) y guarda la respuesta como lógico.
+Algoritmo Conexion_Internet
+    Definir respuesta_numerica Como Entero;
+    Definir tiene_internet Como Logico;
+    
+    Escribir "¿Tienes conexión a internet en casa?";
+    Escribir "Escribe 1 para SÍ o 0 para NO:";
+    Leer respuesta_numerica;
+    
+    tiene_internet <- respuesta_numerica = 1;
+	
+    Escribir " ", tiene_internet;
+    
+FinProceso
+
+
+7. Pide al usuario que escriba una letra y muéstrala en pantalla.
+
+Algoritmo Mostrar_Letra
+    Definir letra_ingresada Como Caracter;
+    Escribir "Por favor, escribe una letra y presiona Enter:";
+    Leer letra_ingresada;
+    
+    Escribir "La letra que escribiste es: ", letra_ingresada;
+FinProceso
+
+8. Ingresa un carácter y muestra el mensaje 'Correcto' si es la letra 'A'.
+
+Algoritmo Verificar_LetraA
+    
+    Definir caracter_ingresado Como Caracter;
+    Escribir "Ingresa un carácter y presiona Enter:";
+    Leer caracter_ingresado;
+    
+    Si caracter_ingresado = 'A' Entonces
+        
+        Escribir " Es correcto";
+    Sino
+        Escribir "Es incorrecto";
+    FinSi
+FinProceso
+
+9. Pide al usuario que escriba su nombre y muéstralo con un saludo.
+
+Algoritmo Muestra_Nombre
+	Escribir "Ingrese su nombre ; " Nombre
+	Leer Nombre
+	
+	Escribir " Hola " Nombre
+	
+FinAlgoritmo
+
+10. Solicita una palabra y muestra cuántos caracteres tiene.
+
+Algoritmo CantidadCaracteres
+    Definir palabra Como Caracter;
+    Definir cantidad_caracteres Como Entero;
+    
+    Escribir "Escribe una palabra y presiona Enter:";
+    Leer palabra;
+	
+    cantidad_caracteres <- Longitud(palabra);
+    
+    Escribir "La palabra  tiene ", cantidad_caracteres, " caracteres.";
+FinProceso
